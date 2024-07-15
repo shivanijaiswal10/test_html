@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Netflix Section Styles */
+        .netflix {
+            background-color: #e50914;
+            color: #fff;
+        }
+
+        /* Comedy Movies Section Styles */
+        .comedy-movies {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        /* Image grid styling */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            section {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="netflix">
+            <h1>Netflix Section</h1>
+            <div class="image-grid">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7309/177309-v" alt="Comedy Movie 1">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2982/1432982-i-f7eed05199e8" alt="Comedy Movie 2">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/8050/1000058050/1000058050-v">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2172/1707277262172-i" alt="Comedy Movie 4">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4773/1544773-i-780799471081" alt="Comedy Movie 5">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6677/1720880456677-v" alt="Comedy Movie 6">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3673/1373673-i-9e0ee9154f87" alt="Comedy Movie 7">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/127/1720880480127-i" alt="Comedy Movie 8">
+                <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3560/1303560-v-9493f9786e7b" alt="Comedy Movie 9">
+                <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5696/1365696-t-63fa35092ea3" alt="Comedy Movie 10">
+            </div>
+        </section>
+        <section class="comedy-movies">
+            <h1>Comedy Movies Section</h1>
+            <!-- Add Comedy Movies content here -->
+        </section>
+    </div>
+</body>
+</html>
